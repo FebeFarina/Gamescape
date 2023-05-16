@@ -1,3 +1,0 @@
-Explicacion de la pagina web y de los archivos que contiene
-
-La pagina web consiste en una pagina web con guias y tutoriales de diferentes juegos como son Dark Souls, Vampire Survivors, Monster Hunter World y The binding of Isaac. Todas las paginas disponen de un menu de navegacion, un breadcrumb y un footer. Primero la web tiene una pagina de inicio donde se explica el objetivo de la pagina web y aparecen los juegos con las guias más recientes subida, finalmente al final de esta existe un formulario en el que se le ofrece al usuario suscribirse a los correos informativos de la web. 
