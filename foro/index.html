@@ -14,37 +14,38 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark" role="navigation">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
         <img src="/images/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         Gamescape
       </a>
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link" href="/guias/">Guías</a>
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;" role="menubar">
+          <li class="nav-item" role="none">
+            <a class="nav-link" href="/guias/" role="menuitem">Guías</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/logros/">Logros</a>
+          <li class="nav-item" role="none">
+            <a class="nav-link" href="/logros/" role="menuitem">Logros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/foro/">Foro</a>
+          <li class="nav-item" role="none">
+            <a class="nav-link active" aria-current="page" href="/foro/" role="menuitem">Foro</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar juego" aria-label="Buscar juego">
-          <button class="btn btn-outline-primary" type="submit">Buscar</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar juego" aria-label="Buscar juego"
+            role="searchbox">
+          <button class="btn btn-outline-primary" type="submit" role="button">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Foro</li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Foro</li>
     </ol>
-  </nav>
+</nav>
   <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <div class="container">
     <div class="row">
@@ -56,11 +57,11 @@
             <div class="dropdown bootstrap-select form-control form-control-lg bg-white bg-op-9 text-sm w-lg-50"
               style="width: 100%;">
               <select class="form-control form-control-lg bg-white bg-op-9 text-sm w-lg-50" data-toggle="select"
-                tabindex="0">
-                <option tabindex="1"> Categorías </option>
-                <option tabindex="1"> Guías </option>
-                <option tabindex="1"> Logros </option>
-                <option tabindex="1"> Otros </option>
+                tabindex="-98" aria-label="Categorías">
+                <option> Categorías </option>
+                <option> Guías </option>
+                <option> Logros </option>
+                <option> Otros </option>
               </select>
             </div>
           </div>
@@ -68,11 +69,11 @@
             <div class="dropdown bootstrap-select form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50"
               style="width: 100%;">
               <select class="form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" data-toggle="select"
-                tabindex="0">
-                <option tabindex="1"> Ordenar por </option>
-                <option tabindex="1"> Votos </option>
-                <option tabindex="1"> Respuestas </option>
-                <option tabindex="1"> Visualizaciones </option>
+                tabindex="-98" aria-label="Ordenar por">
+                <option> Ordenar por </option>
+                <option> Votos </option>
+                <option> Respuestas </option>
+                <option> Visualizaciones </option>
               </select>
             </div>
           </div>
@@ -268,7 +269,8 @@
         </div>
         <!-- /End of post 7 -->
       </div>
-      <!-- Sidebar content -->
+
+      <!-- Sidebar content-->
       <div class="col-lg-3 mb-4 mb-lg-0 px-lg-0 mt-lg-0">
         <div
           style="visibility: hidden; display: none; width: 285px; height: 801px; margin: 0px; float: none; position: static; inset: 85px auto auto;">
@@ -286,35 +288,37 @@
               <hr class="m-0">
               <div class="pos-relative px-3 py-3">
                 <h6 class="text-primary text-sm">
-                  <a href="#" class="text-primary">Soy ayuntamiento 11 y no sé como atacar a otras aldeas </a>
+                  <a href="#" class="text-primary">Soy ayuntamiento 11 y no sé como atacar a otras aldeas</a>
                 </h6>
                 <p class="mb-0 text-sm"><span class="op-6">Publicado hace</span> <a class="text-black" href="#">32
                     minutos</a> <span class="op-6">por</span> <a class="text-black" href="#">Febefar</a></p>
               </div>
-              <hr class="m-0">
-              <div class="pos-relative px-3 py-3">
+              <hr class="m-0" role="separator">
+              <div class="pos-relative px-3 py-3" role="region" aria-label="Detalles del tema">
                 <h6 class="text-primary text-sm">
                   <a href="#" class="text-primary">NO CONSIGO EL FINAL DE LA LLAMA FRENÉTICA DE ELDEN RING!!!!</a>
                 </h6>
                 <p class="mb-0 text-sm"><span class="op-6">Publicado hace</span> <a class="text-black" href="#">3
                     minutos</a> <span class="op-6">por</span> <a class="text-black" href="#">PowerBazinga</a></p>
               </div>
-              <div class="bg-white text-sm">
-                <h4 class="px-3 py-4 op-5 m-0 roboto-bold">
-                  Estadísticas
-                </h4>
-                <hr class="my-0">
+              <div class="bg-white text-sm" role="region" aria-label="Estadísticas del foro">
+                <h4 class="px-3 py-4 op-5 m-0 roboto-bold">Estadísticas</h4>
+                <hr class="my-0" role="separator">
                 <div class="row text-center d-flex flex-row op-7 mx-0">
-                  <div class="col-sm-6 flex-ew text-center py-3 border-bottom border-right"> <a
-                      class="d-block lead font-weight-bold" href="#">58</a> Temas </div>
-                  <div class="col-sm-6 col flex-ew text-center py-3 border-bottom mx-0"> <a
-                      class="d-block lead font-weight-bold" href="#">1.856</a> Publicaciones </div>
+                  <div class="col-sm-6 flex-ew text-center py-3 border-bottom border-right">
+                    <a class="d-block lead font-weight-bold" href="#">58</a> Temas
+                  </div>
+                  <div class="col-sm-6 col flex-ew text-center py-3 border-bottom mx-0">
+                    <a class="d-block lead font-weight-bold" href="#">1.856</a> Publicaciones
+                  </div>
                 </div>
                 <div class="row d-flex flex-row op-7">
-                  <div class="col-sm-6 flex-ew text-center py-3 border-right mx-0"> <a
-                      class="d-block lead font-weight-bold" href="#">300</a> Miembros </div>
-                  <div class="col-sm-6 flex-ew text-center py-3 mx-0"> <a class="d-block lead font-weight-bold"
-                      href="#">MarioChu</a> Último miembro </div>
+                  <div class="col-sm-6 flex-ew text-center py-3 border-right mx-0">
+                    <a class="d-block lead font-weight-bold" href="#">300</a> Miembros
+                  </div>
+                  <div class="col-sm-6 flex-ew text-center py-3 mx-0">
+                    <a class="d-block lead font-weight-bold" href="#">MarioChu</a> Último miembro
+                  </div>
                 </div>
               </div>
             </div>
@@ -322,22 +326,24 @@
         </div>
       </div>
       <!-- Footer-->
-      <footer class="bg-dark py-4 mt-auto">
+      <footer class="bg-dark py-4 mt-auto" role="contentinfo">
         <div class="container px-5">
           <div class="row align-items-center justify-content-between flex-column flex-sm-row">
             <div class="col-auto">
-              <div class="small m-0 text-white">Copyright &copy; Gamescape 2023</div>
+              <div class="small m-0 text-white" role="text">Copyright &copy; Gamescape 2023</div>
             </div>
             <div class="col-auto">
-              <a class="link-light small" href="/sitemap/">Sitemap</a>
-              <span class="text-white mx-1">&middot;</span>
-              <a class="link-light small" href="/contacto/">Contacto</a>
-              <span class="text-white mx-1">&middot;</span>
-              <a class="link-light small" href="/ayuda/">Ayuda</a>
+              <a class="link-light small" href="/sitemap/" role="link">Sitemap</a>
+              <span class="text-white mx-1" role="presentation">&middot;</span>
+              <a class="link-light small" href="/contacto/" role="link">Contacto</a>
+              <span class="text-white mx-1" role="presentation">&middot;</span>
+              <a class="link-light small" href="/ayuda/" role="link">Ayuda</a>
             </div>
           </div>
         </div>
       </footer>
+    </div>
+  </div>
 </body>
 
 </html>

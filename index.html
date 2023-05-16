@@ -27,13 +27,13 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link" href="/guias/">Guías</a>
+            <a class="nav-link" href="/guias/" role="menuitem">Guías</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/logros/">Logros</a>
+            <a class="nav-link" href="/logros/" role="menuitem">Logros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/foro/">Foro</a>
+            <a class="nav-link" href="/foro/" role="menuitem">Foro</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -44,7 +44,7 @@
     </div>
   </nav>
   </div>
-  <main class="flex-shrink-0">
+  <main class="flex-shrink-0" role="main">
     <!-- Header-->
     <header class="bg-dark py-5">
       <div class="container px-5">
@@ -54,21 +54,22 @@
               <h1 class="display-5 fw-bolder text-white mb-2" tabindex="0" aria-selected="true">Bienvenido a Gamescape
               </h1>
               <p class="lead fw-normal text-white-50 mb-4" tabindex="0" aria-selected="true">Aquí encontrarás las
-                mejores guías de videojuegos e
-                información sobre cómo conseguir todos los logros</p>
+                mejores guías de videojuegos e información sobre cómo conseguir todos los logros</p>
               <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Comenzar</a>
-                <a class="btn btn-outline-light btn-lg px-4" href="/ayuda/">Saber más</a>
+                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features" role="button">Comenzar</a>
+                <a class="btn btn-outline-light btn-lg px-4" href="/ayuda/" role="button">Saber más</a>
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-              src="/images/MonsterHunter.jpg" alt="Captura de Monster Hunter World" /></div>
+          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+            <img class="img-fluid rounded-3 my-5" src="/images/MonsterHunter.jpg"
+              alt="Captura de Monster Hunter World" />
+          </div>
         </div>
       </div>
     </header>
-    <!-- Blog preview section-->
-    <section class="py-5" id="features">
+    <!-- Blog Preview Section -->
+    <section class="py-5" id="features" role="region" aria-label="Guías más relevantes">
       <div class="container px-5 my-5">
         <div class="row gx-5 justify-content-center">
           <div class="col-lg-8 col-xl-6">
@@ -83,11 +84,12 @@
               <img class="card-img-top" src="/images/VampireSurvivors.jpg" alt="Portada de Vampire Survivors" />
               <div class="card-body p-4">
                 <div class="badge bg-primary bg-gradient rounded-pill mb-2">Nuevo</div>
-                <a class="text-decoration-none link-dark stretched-link" href="/guias/guiasVampireSurvivors.html">
-                  <h5 class="card-title mb-3">Vampire Survivors</h5>
+                <a class="text-decoration-none link-dark stretched-link" href="/guias/guiasVampireSurvivors.html"
+                  role="link">
+                  <h5 class="card-title mb-3" tabindex="0">Vampire Survivors</h5>
                 </a>
-                <p class="card-text mb-0" tabindex="0">Cómo desbloquear a los personajes secretos y cómo evolucionar todas las armas
-                </p>
+                <p class="card-text mb-0" tabindex="0">Cómo desbloquear a los personajes secretos y cómo evolucionar
+                  todas las armas</p>
               </div>
             </div>
           </div>
@@ -95,11 +97,12 @@
             <div class="card h-100 shadow border-0">
               <img class="card-img-top" src="/images/DarkSoulsLogo.jpeg" alt="Portada de Dark Souls Remastered" />
               <div class="card-body p-4">
-                <a class="text-decoration-none link-dark stretched-link" href="/guias/guiasDarkSouls.html">
+                <a class="text-decoration-none link-dark stretched-link" href="/guias/guiasDarkSouls.html" role="link">
                   <div class="badge bg-primary bg-gradient rounded-pill mb-2">Nuevo</div>
-                  <h5 class="card-title mb-3">Dark Souls</h5>
+                  <h5 class="card-title mb-3" tabindex="0">Dark Souls</h5>
                 </a>
-                <p class="card-text mb-0" tabindex="0">Dónde se encuentran las mejores armas y cómo derrotar a todos los jefes</p>
+                <p class="card-text mb-0" tabindex="0">Dónde se encuentran las mejores armas y cómo derrotar a todos los
+                  jefes</p>
               </div>
             </div>
           </div>
@@ -107,17 +110,20 @@
             <div class="card h-100 shadow border-0">
               <img class="card-img-top" src="/images/IsaacRebirth.webp" alt="Portada de The Binding of Isaac Rebirth" />
               <div class="card-body p-4">
-                <a class="text-decoration-none link-dark stretched-link" href="/guias/guiasBindingOfIsaac.html">
+                <a class="text-decoration-none link-dark stretched-link" href="/guias/guiasBindingOfIsaac.html"
+                  role="link">
                   <div class="badge bg-primary bg-gradient rounded-pill mb-2">Nuevo</div>
-                  <h5 class="card-title mb-3">The Binding of Isaac Rebirth</h5>
+                  <h5 class="card-title mb-3" tabindex="0">The Binding of Isaac Rebirth</h5>
                 </a>
-                <p class="card-text mb-0" tabindex="0">Cómo conseguir todos los finales y descripción de todos los objetos</p>
+                <p class="card-text mb-0" tabindex="0">Cómo conseguir todos los finales y descripción de todos los
+                  objetos</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Call to action-->
-        <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+        <!-- Call to action -->
+        <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5" role="complementary"
+          aria-label="Suscribirse al boletín de noticias">
           <div
             class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
             <div class="mb-4 mb-xl-0">
